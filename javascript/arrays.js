@@ -1,7 +1,7 @@
 //create an array
 var colorList = ["Red", "Black", "White", "Blue", "Ocher", "Yellow", "Pink"];
 
-//variables IN functions (function scope), can see global varibles)
+//variables IN functions (function scope), can see global variables)
 
 var imageListA = new Array();
 imageListA[0] = "images/cathedral/cathedral_00.jpg";
@@ -103,9 +103,28 @@ function update_shopping_cart()
   var output = "";
 
   //create a for loop
-  for (var i = 0; i <= purchasedImages.length - 1; i++)
+ for (var i = 0; i <= purchasedImages.length - 1; i++)
   //use a -1 after imageList.length so the condition is always one less (to match the index number)    
+  
+/*  var table = "<table>"; // Open Table
+
+for(i=0; i<purchasedImages.length; i++)
+{
+ table += "<tr>"; // Open Row
+
+ for(i2=0; i2<purchasedImages[i].length; i2++) {
+ {
+ table += "<td>" + purchasedImages[i][i2] + "</td>"; // Each Column
+ }
+
+ table += "</tr>"; // Close Row
+}
+
+table += "</table>"; // Close Table */
+  
+      
   {
+      
     output += '<img src="' + purchasedImages[i] +
       '" width="70" height="50" />';
   }
